@@ -44,7 +44,7 @@
                 success:function(e){
                     console.log(e);
                     var str='';
-                    for(i in e){
+                    for(var i in e){
                         str+=('<tr><td>'+e[i].name+'</td> <td>'+e[i].details+'</td> <td>'+e[i].price+'</td></tr>')
                     }
                     $('table').html(str)
